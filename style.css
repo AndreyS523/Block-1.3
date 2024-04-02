@@ -123,15 +123,19 @@ ul {
 }
 
 .menu-list__item {
+    box-sizing: border-box;
     padding: 8px 8px 8px 16px;
     color: #7E7E82;
     border-radius: 6px;
     text-wrap: nowrap;
+    margin: 2px;
 
 }
 
-.menu-list__item:hover, .menu-list__item:focus {
+.menu-list__item:hover, 
+.menu-list__item:focus {
     border: #B8FFEC solid 2px;
+    margin: 0;
 }
 
 .main-block {
@@ -313,5 +317,8 @@ ul {
     .main-block__text {
         margin-top: 16px;
         margin-left: 35px;
+    }
+    .main-block__text-1 {
+        margin-top: 0;
     }
 }
